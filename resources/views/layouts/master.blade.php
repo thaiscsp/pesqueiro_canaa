@@ -16,7 +16,7 @@
 				color:  #ffffff !important;
 			}
 
-			ul,.card-body,.lead{
+			h6, ul,.card-body,.lead{
 				font-family: Montserrat;
 				font-weight: bold;
 			}
@@ -24,6 +24,16 @@
 			h1 {
 				font-family: "Dancing Script";
 				font-weight: bold !important;
+			}
+
+			.lc-block {
+				position: relative;
+			}
+
+			#nav {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
 			}
 		</style>
 	</head>
@@ -52,8 +62,8 @@
         </div>
     </div>
 </div>
-
-<ul style="background-color: rgb(33, 37, 41);" class="nav justify-content-center">
+        <div id="nav">
+    	            <ul style="background-color: rgb(33, 37, 41);" class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" href="#combos">Combos</a>
   </li>
@@ -64,6 +74,7 @@
     <a class="nav-link" href="#bebidas">Bebidas</a>
   </li>
 </ul>
+    </div>
 <br>
 
 		@yield('content')
