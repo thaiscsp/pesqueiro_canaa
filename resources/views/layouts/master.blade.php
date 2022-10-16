@@ -46,7 +46,7 @@
 
 		<!-- Navbar -->
         <div id="nav">
-        	<ul style="padding-top: 5px; padding-bottom: 5px; background-color: rgb(33, 37, 41);" class="nav justify-content-center">
+        	<ul style="padding-top: 20px; padding-bottom: 20px; background-color: rgb(33, 37, 41);" class="nav justify-content-center">
   				<li class="nav-item">
     				<a class="nav-link active" href="#combos">Combos</a>
   				</li>
