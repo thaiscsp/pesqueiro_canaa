@@ -1,0 +1,23 @@
+a {
+	color:  #ffffff !important;
+}
+
+h6, ul,.card-body,.lead{
+	font-family: Montserrat;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: "Dancing Script";
+	font-weight: bold !important;
+}
+
+.lc-block {
+	position: relative;
+}
+
+#nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
