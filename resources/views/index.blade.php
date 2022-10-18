@@ -35,7 +35,7 @@
         <center>
             <div class="col mb-4">
                 <div class="card">
-                    <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" class="card-img-top" alt="Combo de contra filé">
+                    <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" class="card-img-top" alt="Prato executivo de parmegiana">
                     <div class="card-body">
                         <h6 class="card-title">Prato executivo de parmegiana</h6>
                         <p class="card-text">R$ 0,00</p>
@@ -46,7 +46,7 @@
         <center>
             <div class="col mb-4">
                 <div class="card">
-                    <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" class="card-img-top" alt="Combo de contra filé">
+                    <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" class="card-img-top" alt="Prato executivo de parmegiana">
                     <div class="card-body">
                         <h6 class="card-title">Prato executivo de parmegiana</h6>
                         <p class="card-text">R$ 0,00</p>
@@ -61,7 +61,7 @@
         <center>
             <div class="col mb-4">
                 <div class="card">
-                    <img src="{{ asset('images/caipirinha-354x354.jpg') }}" class="card-img-top" alt="Combo de contra filé">
+                    <img src="{{ asset('images/caipirinha-354x354.jpg') }}" class="card-img-top" alt="Caipirinha">
                     <div class="card-body">
                         <h6 class="card-title">Caipirinha</h6>
                         <p class="card-text">R$ 0,00</p>
@@ -72,7 +72,7 @@
         <center>
             <div class="col mb-4">
                 <div class="card">
-                    <img src="{{ asset('images/caipirinha-354x354.jpg') }}" class="card-img-top" alt="Combo de contra filé">
+                    <img src="{{ asset('images/caipirinha-354x354.jpg') }}" class="card-img-top" alt="Caipirinha">
                     <div class="card-body">
                         <h6 class="card-title">Caipirinha</h6>
                         <p class="card-text">R$ 0,00</p>
