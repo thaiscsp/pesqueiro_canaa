@@ -26,7 +26,6 @@
 		</div>
 
 <div class="container">
-
     <h1 id="combos" class="text-center display-4">Combos</h1><br>
     <div class="row row-cols-2 row-cols-lg-3">
         <center>
@@ -104,6 +103,5 @@
             </div>
         </center>
     </div>
-
 </div>
 @stop
