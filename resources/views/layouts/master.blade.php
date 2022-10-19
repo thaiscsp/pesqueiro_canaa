@@ -47,7 +47,6 @@
 	</head>
 
 	<body>
-
 		<!-- Navbar -->
         <div id="nav">
         	<ul class="nav justify-content-center">
