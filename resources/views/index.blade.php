@@ -2,7 +2,9 @@
 @section('title', 'Pesqueiro Canaã')
 
 @section('content')
-<!-- Hero section -->
+    <!-- Hero section -->
+    <section>
+        
 		<div class="d-flex min-vh-100" lc-helper="background" style="background:url(https://raw.githubusercontent.com/thaiscsp/pesqueiro_canaa/13_10_22/public/images/cardapio.jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
     		<div class="align-self-center text-center text-light col-md-8 offset-md-2">
         		<div class="lc-block mb-4">
@@ -24,85 +26,336 @@
         		</div>
     		</div>
 		</div>
-        
-<br>
-<div class="container">
-    <h1 id="combos" class="text-center display-4">Combos</h1><br>
-    <div class="row row-cols-2 row-cols-lg-3">
-        <center>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" class="card-img-top" alt="Combo de contra filé">
-                    <div class="card-body">
-                        <h6 class="card-title">Combo de contra filé</h6>
-                        <p class="card-text">R$ 0,00</p>
+    </section>
+    <h1 id="combos">Combos</h1>
+    <section id="galeria">
+        <div class="swiper mySwiper conteiner">
+            <div class="swiper-wrapper content">
+                
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
+                            <br>
+                            <br>
+                            <h6>Contra Filé</h6>
+                            <h6>Preço: R$42,88</h6>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </center>
-        <center>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" class="card-img-top" alt="Combo de contra filé">
-                    <div class="card-body">
-                        <h6 class="card-title">Combo de contra filé</h6>
-                        <p class="card-text">R$ 0,00</p>
-                    </div>
-                </div>
-            </div>
-        </center>
-    </div>
 
-    <h1 id="pratos" class="text-center display-4">Pratos</h1><br>
-    <div class="row row-cols-2 row-cols-md-3">
-        <center>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" class="card-img-top" alt="Prato executivo de parmegiana">
-                    <div class="card-body">
-                        <h6 class="card-title">Prato executivo de parmegiana</h6>
-                        <p class="card-text">R$ 0,00</p>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
+                            <br>
+                            <br>
+                            <h6>Contra Filé</h6>
+                            <h6>Preço: R$42,88</h6>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </center>
-        <center>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" class="card-img-top" alt="Prato executivo de parmegiana">
-                    <div class="card-body">
-                        <h6 class="card-title">Prato executivo de parmegiana</h6>
-                        <p class="card-text">R$ 0,00</p>
-                    </div>
-                </div>
-            </div>
-        </center>
-    </div>
 
-    <h1 id="bebidas" class="text-center display-4">Bebidas</h1><br>
-    <div class="row row-cols-2 row-cols-md-3">
-        <center>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="{{ asset('images/caipirinha-354x354.jpg') }}" class="card-img-top" alt="Caipirinha">
-                    <div class="card-body">
-                        <h6 class="card-title">Caipirinha</h6>
-                        <p class="card-text">R$ 0,00</p>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
+                            <br>
+                            <br>
+                            <h6>Contra Filé</h6>
+                            <h6>Preço: R$42,88</h6>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </center>
-        <center>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="{{ asset('images/caipirinha-354x354.jpg') }}" class="card-img-top" alt="Caipirinha">
-                    <div class="card-body">
-                        <h6 class="card-title">Caipirinha</h6>
-                        <p class="card-text">R$ 0,00</p>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
+                            <br>
+                            <br>
+                            <h6>Contra Filé</h6>
+                            <h6>Preço: R$42,88</h6>
+                        </div>
                     </div>
                 </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
+                            <br>
+                            <br>
+                            <h6>Contra Filé</h6>
+                            <h6>Preço: R$42,88</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
+                            <br>
+                            <br>
+                            <h6>Contra Filé</h6>
+                            <h6>Preço: R$42,88</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
+                            <br>
+                            <br>
+                            <h6>Contra Filé</h6>
+                            <h6>Preço: R$42,88</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
+                            <br>
+                            <br>
+                            <h6>Contra Filé</h6>
+                            <h6>Preço: R$42,88</h6>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-pagination"></div>
+
             </div>
-        </center>
-    </div>
-</div>
+        </div>
+    </section>
+
+    <h1 id="pratos">Pratos</h1>
+
+    <section id="galeria">
+        <div class="swiper mySwiper conteiner">
+            <div class="swiper-wrapper content">
+                
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
+                            <br>
+                            <br>
+                            <h6>Parmegiana</h6>
+                            <h6>Preço: R$85,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
+                            <br>
+                            <br>
+                            <h6>Parmegiana</h6>
+                            <h6>Preço: R$85,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
+                            <br>
+                            <br>
+                            <h6>Parmegiana</h6>
+                            <h6>Preço: R$85,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
+                            <br>
+                            <br>
+                            <h6>Parmegiana</h6>
+                            <h6>Preço: R$85,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
+                            <br>
+                            <br>
+                            <h6>Parmegiana</h6>
+                            <h6>Preço: R$85,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
+                            <br>
+                            <br>
+                            <h6>Parmegiana</h6>
+                            <h6>Preço: R$85,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
+                            <br>
+                            <br>
+                            <h6>Parmegiana</h6>
+                            <h6>Preço: R$85,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
+                            <br>
+                            <br>
+                            <h6>Parmegiana</h6>
+                            <h6>Preço: R$85,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <h1 id="bebidas">Bebidas</h1>
+
+    <section id="galeria">
+        <div class="swiper mySwiper conteiner">
+            <div class="swiper-wrapper content">
+                
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
+                            <br>
+                            <br>
+                            <h6>Caipirinha</h6>
+                            <h6>Preço: R$18,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
+                            <br>
+                            <br>
+                            <h6>Caipirinha</h6>
+                            <h6>Preço: R$18,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
+                            <br>
+                            <br>
+                            <h6>Caipirinha</h6>
+                            <h6>Preço: R$18,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
+                            <br>
+                            <br>
+                            <h6>Caipirinha</h6>
+                            <h6>Preço: R$18,00</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
+                            <br>
+                            <br>
+                            <h6>Caipirinha</h6>
+                            <h6>Preço: R$18,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
+                            <br>
+                            <br>
+                            <h6>Caipirinha</h6>
+                            <h6>Preço: R$18,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
+                            <br>
+                            <br>
+                            <h6>Caipirinha</h6>
+                            <h6>Preço: R$18,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
+                            <br>
+                            <br>
+                            <h6>Caipirinha</h6>
+                            <h6>Preço: R$18,00</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-pagination"></div>
+
+            </div>
+        </div>
+    </section>  
 @stop
