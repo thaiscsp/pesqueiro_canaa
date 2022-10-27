@@ -415,7 +415,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
  <script>
         $(document).ready(function() {
-            $.get("http://localhost:8000/api/produtos", function(data, status){
+            $.get("http://pesqueiro-canaa.herokuapp.com/api/produtos", function(data, status){
                 var json = jQuery.parseJSON(data);
                 var tipos_banco = ['Porção', 'Combo', 'Prato Executivo', 'Bebida', 'Suco'];
                 var tipos_classes = ['porcoes', 'combos', 'pratos-executivos', 'bebidas', 'sucos'];
