@@ -1,7 +1,3 @@
-hr {;
-	max-width: 50%;
-}
-
 a {
 	color: #ffffff !important;
 	margin-right: 5px !important;
@@ -33,6 +29,7 @@ h1 {
 }
 
 #galeria{
+	margin-top:  -30px;
 	position:  relative;
 	/*height: 600px;*/
 	width: 100%;
@@ -112,4 +109,8 @@ section	h6 {
 
 frame{
 	align-items: center;
+}
+
+hr {
+	max-width: 50%;
 }
