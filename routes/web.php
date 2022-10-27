@@ -19,10 +19,10 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/adicionar-produto', function () {
-    return view('adicionar-produto');
+Route::get('/gerenciar-produtos', function () {
+    return view('gerenciar-produtos');
 });
-Route::post('/adicionar-produto', [ProdutoController::class, 'salvar']);
+Route::post('/gerenciar-produtos', [ProdutoController::class, 'gerenciar_produtos']);
 
 Route::get('/porcoes', function () {
     return view('porcoes');

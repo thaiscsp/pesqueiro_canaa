@@ -10,7 +10,7 @@ ul {
 	background-color: rgb(33, 37, 41);
 }
 
-p, h6, ul,.card-body,.lead{
+p, h2, h6, ul,.card-body,.lead{
 	font-family: Montserrat;
 	font-weight: bold;
 }

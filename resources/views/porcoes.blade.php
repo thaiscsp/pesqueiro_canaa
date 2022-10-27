@@ -35,7 +35,7 @@
 
     <script>
         $(document).ready(function() {
-            $.get("http://localhost:8001/api/produtos", function(data, status){
+            $.get("http://localhost:8000/api/produtos", function(data, status){
                 var json = jQuery.parseJSON(data);
                 var produtos = '';
                 $.each(json, function(key, value) {
