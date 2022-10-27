@@ -1,5 +1,13 @@
-a {
-	color:  #ffffff !important;
+a:hover {
+	color: #ffffff !important;
+	margin-right: 5px !important;
+	/*color: inherit;*/
+}
+
+ul {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(33, 37, 41);
 }
 
 h6, ul,.card-body,.lead{
@@ -8,13 +16,9 @@ h6, ul,.card-body,.lead{
 }
 
 h1 {
+	text-align: center;
 	font-family: "Dancing Script";
 	font-weight: bold !important;
-}
-
-#hero {
-	/*position: relative;*/
-	height: 100vh;
 }
 
 #nav {
@@ -22,4 +26,86 @@ h1 {
 	top: 0;
 	width: 100%;
 	z-index: 100;
+}
+
+#galeria{
+	position:  relative;
+	height: 600px;
+	width: 100%;
+	display: flex;
+	align-items: center;	
+	margin-left: 30px;
+	margin-right: 30px;
+	min-width: 665px;
+}
+
+.swiper{
+	width: 1000px;
+
+}
+
+.card{
+	position: relative;
+	border-radius: 20px;
+	margin: 20px 0;
+
+}
+
+#galeria .card .image{
+	height:  100%;
+	width: 100%;
+	cursor:  pointer;
+	padding: 25px;
+	
+}
+
+#galeria .card .image img{
+	height:  100%;
+	width: 100%;
+	border-radius: 20px;
+	transition: all 0.4s;
+	opacity: 100%;
+}
+
+#galeria .card .image img:hover{
+	transform: scale(1.09);
+	opacity: 100%;
+}
+
+.swiper-pagination{
+	position: relative;
+}
+
+.swiper-button-next, .swiper-button-prev{
+	opacity: 0.7;
+	color: #cc0707;
+	transition: all 0.3s ease;
+
+} 
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+	opacity: 1;
+	color: #ffffff;
+}
+
+.footer{
+    padding: 2.5rem 0;
+    color: #727272;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-top: .05rem solid #e5e5e5;
+}
+
+section	h6 {
+	text-align: center;
+	position: relative;
+}
+
+.sobre {
+	text-align: center;
+	align-items: center;
+}
+
+frame{
+	align-items: center;
 }

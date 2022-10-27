@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProdutoController;
+use App\Models\Produto;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/adicionar-produto', function () {
+    return view('adicionar-produto');
+});
+Route::post('/adicionar-produto', [ProdutoController::class, 'salvar']);
+
+Route::get('/porcoes', function () {
+    return view('porcoes');
+});
