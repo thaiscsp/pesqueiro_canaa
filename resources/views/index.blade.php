@@ -428,7 +428,7 @@
                                 '<center>' +
                                     '<div class="col mb-4">' +
                                         '<div class="card">' +
-                                            '<img style="height: 340px; 340px;" src="' +this.caminho_imagem+ '" class="card-img-top">' +
+                                            '<img style="height: 340px; 340px;" src="/public/' +this.caminho_imagem+ '" class="card-img-top">' +
                                             '<div class="card-body">' +
                                                 '<h6 class="card-title">' +this.nome+ '</h6>' +
                                                 '<p class="card-text">R$ ' +this.preco+ '</p>' +
