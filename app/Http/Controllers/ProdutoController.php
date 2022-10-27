@@ -27,5 +27,5 @@ class ProdutoController extends Controller
     public function get_produtos() {
         $produtos = json_encode(Produto::all(), JSON_UNESCAPED_UNICODE);
         return response($produtos, 200);
-    }
+    }     
 }

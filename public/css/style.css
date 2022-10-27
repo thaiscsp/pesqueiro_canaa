@@ -1,4 +1,8 @@
-a:hover {
+hr {;
+	max-width: 50%;
+}
+
+a {
 	color: #ffffff !important;
 	margin-right: 5px !important;
 	/*color: inherit;*/
@@ -10,7 +14,7 @@ ul {
 	background-color: rgb(33, 37, 41);
 }
 
-h6, ul,.card-body,.lead{
+p, h6, ul,.card-body,.lead{
 	font-family: Montserrat;
 	font-weight: bold;
 }
@@ -30,7 +34,7 @@ h1 {
 
 #galeria{
 	position:  relative;
-	height: 600px;
+	/*height: 600px;*/
 	width: 100%;
 	display: flex;
 	align-items: center;	

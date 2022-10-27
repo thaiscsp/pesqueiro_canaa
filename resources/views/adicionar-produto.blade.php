@@ -2,7 +2,7 @@
 @section('title', 'Gerenciar Produtos')
 
 @section('content')
-
+<br>
 <div class="container">
 	<form method="post" action="" enctype="multipart/form-data">
 		@csrf
@@ -32,7 +32,11 @@
 
 		<input type="submit" value="Adicionar">
 	</form>
+	<br>
 
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
 	<script>
 		$(document).ready(function() {
 			$('#tipo').change(function() {
