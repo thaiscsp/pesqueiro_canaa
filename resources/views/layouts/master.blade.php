@@ -38,6 +38,9 @@
   				<li class="nav-item">
     				<a class="nav-link" href="#porcoes">Porções</a>
   				</li>
+  				<li class="nav-item">
+    				<a class="nav-link" href="#sobre">Sobre</a>
+  				</li>
 			</ul>
     	</div>
 		<br>

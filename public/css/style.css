@@ -1,6 +1,7 @@
-a {
+a:hover {
 	color: #ffffff !important;
 	margin-right: 5px !important;
+	color: inherit;
 }
 
 ul {
@@ -28,16 +29,18 @@ h1 {
 }
 
 #galeria{
-	background-color: #e4e4e4;
-	position:  inherit;
-	height: 400px;
+	position:  relative;
+	height: 600px;
 	width: 100%;
 	display: flex;
 	align-items: center;	
+	margin-left: 30px;
+	margin-right: 30px;
+	min-width: 665px;
 }
 
 .swiper{
-	width: 1200px;
+	width: 1000px;
 
 }
 
@@ -62,7 +65,6 @@ h1 {
 	border-radius: 20px;
 	transition: all 0.4s;
 	opacity: 100%;
-	background-color: #f4f4f4;
 }
 
 #galeria .card .image img:hover{
@@ -71,13 +73,14 @@ h1 {
 }
 
 .swiper-pagination{
-	position: absolute;
+	position: relative;
 }
 
 .swiper-button-next, .swiper-button-prev{
 	opacity: 0.7;
 	color: #cc0707;
 	transition: all 0.3s ease;
+
 } 
 
 .swiper-button-next:hover, .swiper-button-prev:hover{
@@ -91,4 +94,18 @@ h1 {
     text-align: center;
     background-color: #f4f4f4;
     border-top: .05rem solid #e5e5e5;
+}
+
+section	h6 {
+	text-align: center;
+	position: relative;
+}
+
+.sobre {
+	text-align: center;
+	align-items: center;
+}
+
+frame{
+	align-items: center;
 }
