@@ -3,57 +3,8 @@
 
 @section('content')
 
-<!-- Navbar -->
-        <div id="nav">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#combos">Combos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#pratos">Pratos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#bebidas">Bebidas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#porcoes">Porções</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre</a>
-                </li>
-            </ul>
-        </div>
-        <br>
+
         
-        .checkbtn{
-	font-size: 30px;
-	color: #fff;
-	float: right;
-	line-height: 80px;
-	margian-right: 40px;
-	cursor: pointer;
-	display: none;
-}
-
-
-#check {
-	display: none;
-}
-@media (max-width: 952px){
-	label.logo{
-		font-size:30px;
-		paddting-left: 50px;
-	}
-	nav ul li a{
-		font-size: 16px;
-	}
-}
-@media (max-width: 858px){
-	.checkbtn {
-		display: block;
-	}
-}
-
 
 <!-- Hero section -->
 <div class="d-flex min-vh-100" lc-helper="background" style="background:url(https://raw.githubusercontent.com/thaiscsp/pesqueiro_canaa/13_10_22/public/images/cardapio.jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
