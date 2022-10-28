@@ -22,7 +22,7 @@ h1 {
 }
 
 #nav {
-	position: relative;
+	position: center;
 	top: 0;
 	width: 100%;
 	z-index: 100;
@@ -30,7 +30,7 @@ h1 {
 
 #galeria{
 	margin-top:  -30px;
-	position:  center;
+	position:  relative;
 	/*height: 600px;*/
 	width: 100%;
 	display: flex;
