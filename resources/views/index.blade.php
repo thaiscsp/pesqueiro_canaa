@@ -4,27 +4,34 @@
 @section('content')
 
 <!-- Navbar -->
-        <div id="nav">
-        <div class="align-self-center text-center text-light col-md-8 offset-md-2">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#combos">Combos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#pratos">Pratos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#bebidas">Bebidas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#porcoes">Porções</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre</a>
-                </li>
-            </ul>
-        </div>
-        <br>
+<nav id="nav" class="text-center navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Pesqueiro Canaã</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#combos">Combos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pratos">Pratos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#bebidas">Bebidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#porcoes">Porções</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre">Sobre</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
 
 <!-- Hero section -->
 <div class="d-flex min-vh-100" lc-helper="background" style="background:url(https://raw.githubusercontent.com/thaiscsp/pesqueiro_canaa/13_10_22/public/images/cardapio.jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
@@ -65,7 +72,7 @@
                             <br>
                             <br>
                             <h6>Contra Filé</h6>
-                            <h6>Preço: R$42,88</h6>
+                            <h6>R$42,88</h6>
                         </div>
                     </div>
                 </div>
@@ -77,7 +84,7 @@
                             <br>
                             <br>
                             <h6>Contra Filé</h6>
-                            <h6>Preço: R$42,88</h6>
+                            <h6>R$42,88</h6>
                         </div>
                     </div>
                 </div>
@@ -89,7 +96,7 @@
                             <br>
                             <br>
                             <h6>Contra Filé</h6>
-                            <h6>Preço: R$42,88</h6>
+                            <h6>R$42,88</h6>
                         </div>
                     </div>
                 </div>
@@ -101,7 +108,7 @@
                             <br>
                             <br>
                             <h6>Contra Filé</h6>
-                            <h6>Preço: R$42,88</h6>
+                            <h6>R$42,88</h6>
                         </div>
                     </div>
                 </div>
@@ -113,7 +120,7 @@
                             <br>
                             <br>
                             <h6>Contra Filé</h6>
-                            <h6>Preço: R$42,88</h6>
+                            <h6>R$42,88</h6>
                         </div>
                     </div>
                 </div>
@@ -125,7 +132,7 @@
                             <br>
                             <br>
                             <h6>Contra Filé</h6>
-                            <h6>Preço: R$42,88</h6>
+                            <h6>R$42,88</h6>
                         </div>
                     </div>
                 </div>
@@ -137,7 +144,7 @@
                             <br>
                             <br>
                             <h6>Contra Filé</h6>
-                            <h6>Preço: R$42,88</h6>
+                            <h6>R$42,88</h6>
                         </div>
                     </div>
                 </div>
@@ -149,7 +156,7 @@
                             <br>
                             <br>
                             <h6>Contra Filé</h6>
-                            <h6>Preço: R$42,88</h6>
+                            <h6>R$42,88</h6>
                         </div>
                     </div>
                 </div>
@@ -282,7 +289,7 @@
     <center><hr></center><br>
     <div name="bebidas" class="row row-cols-2 row-cols-lg-3"></div>
     <section id="galeria">
-        <div class="swiper mySwiper conteiner">
+        <div class="swiper mySwiper">
             <div class="swiper-wrapper content">
                 
                 <div class="swiper-slide card">
@@ -401,7 +408,7 @@
                 <p>Também conta com dois tanques de pesca <!--de aproximadamente x m²--> para você esfriar a cabeça, com uma grande variedade de peixes.</p>
                 <img src="" alt="">
                 <br>
-                <iframe style="width: auto;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.1952875935835!2d-47.29770334882908!3d-22.943033944861174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8a55ce8155bb7%3A0x3f17f4f690bc738b!2sPesqueiro%20cana%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1666835152208!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.1952875935835!2d-47.29770334882908!3d-22.943033944861174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8a55ce8155bb7%3A0x3f17f4f690bc738b!2sPesqueiro%20cana%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1666835152208!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <br><br>
                 <p>Contato: (xx) x xxxx-xxxx</p>
             </div>
@@ -414,44 +421,6 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <script>
-        $(document).ready(function() {
-            $.get("http://pesqueiro-canaa.herokuapp.com/api/produtos", function(data, status){
-                var json = jQuery.parseJSON(data);
-                var tipos_banco = ['Porção', 'Combo', 'Prato Executivo', 'Bebida', 'Suco'];
-                var tipos_classes = ['porcoes', 'combos', 'pratos-executivos', 'bebidas', 'sucos'];
-                var produtos = '';
-               
-                for (var tipo_banco of tipos_banco) {
-                    $.each(json, function(key, value) {
-                        if (this.tipo == tipo_banco) {
-                            produtos += 
-                                '<center>' +
-                                    '<div class="col mb-4">' +
-                                        '<div class="card">' +
-                                            '<img style="height: 340px; 340px;" src="' +this.caminho_imagem+ '" class="card-img-top">' +
-                                            '<div class="card-body">' +
-                                                '<h6 class="card-title">' +this.nome+ '</h6>' +
-                                                '<p class="card-text">R$ ' +this.preco+ '</p>' +
-                                            '</div>' +
-                                        '</div>' +
-                                    '</div>' +
-                                '</center>';
-                        }
-                        var index = tipos_banco.indexOf(tipo_banco);
-                        $('div[name="'+tipos_classes[index]+'"]').html(produtos);
-                    });
-                    produtos = '';
-                }
-            });
-        });
-        
-                
-if ($mobile){
-    echo "Acesso feito via ".strtolower($modelo);
-}else{
-    echo "Acesso feito via computador";
-}
-?>
-    </script>
+<script src="{{ asset('js/exibe_produtos.js') }}"></script>
+
 @stop
