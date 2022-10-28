@@ -25,12 +25,7 @@
 	<body>
 		
 		@yield('content')
-
-		<!--<footer>
-			<a href="#"><img style="position: fixed; bottom: 20px; right: 25px;" src="{{ asset('images/topo.png') }}"></a>
-		</footer>-->
 			
-		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 		<!--Swiper-->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js" ></script>
