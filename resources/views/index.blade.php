@@ -446,5 +446,12 @@
             });
         });
     </script>
+if ($mobile){
+    echo "Acesso feito via ".strtolower($modelo);
+}else{
+    echo "Acesso feito via computador";
+}
+?>
+		</script>
 
 @stop
