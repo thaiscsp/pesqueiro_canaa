@@ -4,7 +4,7 @@
 @section('content')
 
 <!-- Navbar -->
-        <div id="nav">
+        <div class="topnav" id="myTopnav">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link" href="#combos">Combos</a>
