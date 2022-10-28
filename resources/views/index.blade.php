@@ -5,6 +5,7 @@
 
 <!-- Navbar -->
         <div id="nav">
+        <div class="align-self-center text-center text-light col-md-8 offset-md-2">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link" href="#combos">Combos</a>
