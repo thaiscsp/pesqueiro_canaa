@@ -30,7 +30,7 @@ h1 {
 
 #galeria{
 	margin-top:  -30px;
-	position:  relative;
+	position:  center;
 	/*height: 600px;*/
 	width: 100%;
 	display: flex;
