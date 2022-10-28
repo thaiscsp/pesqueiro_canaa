@@ -5,6 +5,7 @@
 
 <!-- Navbar -->
         <div id="nav">
+        <div class="align-self-center text-center text-light col-md-8 offset-md-2">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link" href="#combos">Combos</a>
@@ -24,7 +25,6 @@
             </ul>
         </div>
         <br>
-        
 
 <!-- Hero section -->
 <div class="d-flex min-vh-100" lc-helper="background" style="background:url(https://raw.githubusercontent.com/thaiscsp/pesqueiro_canaa/13_10_22/public/images/cardapio.jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
@@ -445,15 +445,6 @@
                 }
             });
         });
-        
-if ($mobile){
-    echo "Acesso feito via ".strtolower($modelo);
-}else{
-    echo "Acesso feito via computador";
-}
-?>
-        
     </script>
-
 
 @stop
