@@ -4,6 +4,10 @@
 @section('content')
 
 <!-- Navbar -->
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Ativo</a>
+  </li>
         <div id="nav">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
