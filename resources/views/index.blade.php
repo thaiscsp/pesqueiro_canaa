@@ -3,7 +3,27 @@
 
 @section('content')
 
-
+<!-- Navbar -->
+        <div id="nav">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#combos">Combos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pratos">Pratos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bebidas">Bebidas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#porcoes">Porções</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+            </ul>
+        </div>
+        <br>
         
 
 <!-- Hero section -->
