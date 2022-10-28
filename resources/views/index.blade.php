@@ -453,7 +453,5 @@ if ($mobile){
     echo "Acesso feito via computador";
 }
 ?>
-
     </script>
-
 @stop
