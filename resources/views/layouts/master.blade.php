@@ -18,8 +18,8 @@
 		<!-- Swiper -->
 		<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-		<!--CSS-->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- CSS local -->
+		<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/thaiscsp/pesqueiro_canaa/main/public/css/style.css">
 	</head>
 
 	<body>
