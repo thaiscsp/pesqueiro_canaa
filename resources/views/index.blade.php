@@ -5,11 +5,10 @@
 
 <!-- Navbar -->
         <div id="nav">
-
-                <ul class="nav nav-pills nav-fill">
-                 <li class="nav-item">
-                     <a class="nav-link ahref="#combos">Combos</a>
-                 </li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#combos">Combos</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#pratos">Pratos</a>
                 </li>
