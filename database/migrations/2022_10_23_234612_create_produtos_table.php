@@ -21,6 +21,8 @@ class CreateProdutosTable extends Migration
             $table->string('tipo_especifico')->nullable();
             $table->string('preco')->nullable(false);
             $table->string('caminho_imagem')->nullable(false);
+            $table->string('nome_arquivo')->nullable(false);
+            //$table->binary('imagem')->nullable(false);
         });
     }
 

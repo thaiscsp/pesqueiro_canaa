@@ -20,6 +20,9 @@ class ProdutoController extends Controller
             $produto->tipo_especifico = $request->input('tipo-especifico');
             $produto->preco = $request->input('preco');
             $produto->caminho_imagem = $caminho_imagem;
+            $produto->nome_arquivo = $nome_arquivo;
+            //$produto->imagem = $imagem;
+
             $produto->save();
             Session::flash('sucesso', 'Produto adicionado com sucesso.');
             return redirect('gerenciar-produtos');
@@ -40,5 +43,5 @@ class ProdutoController extends Controller
     public function get_produtos() {
         $produtos = json_encode(Produto::all(), JSON_UNESCAPED_UNICODE);
         return response($produtos, 200);
-    }     
+    }
 }

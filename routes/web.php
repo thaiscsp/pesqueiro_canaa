@@ -27,3 +27,7 @@ Route::post('/gerenciar-produtos', [ProdutoController::class, 'gerenciar_produto
 Route::get('/porcoes', function () {
     return view('porcoes');
 });
+
+Route::get('/imagem', function () {
+    return view('imagem');
+});
