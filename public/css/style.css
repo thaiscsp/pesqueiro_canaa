@@ -119,6 +119,10 @@ hr {
 	margin-right: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Para detectar ghost elements
 * {
   background: #000 !important;
