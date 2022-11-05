@@ -14,9 +14,6 @@ if (Session::get('admin')) {
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <?php 
-    	if (Session::get('admin')) {
-    ?>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -30,7 +27,6 @@ if (Session::get('admin')) {
         </li>
       </ul>
     </div>
-	<?php } ?>
   </div>
 </nav>
 
@@ -107,7 +103,7 @@ if (Session::get('admin')) {
 
 <?php
 } else {
-	echo (	'<div class="alert alert-danger container" role="alert">
+	echo (	'<br><div class="alert alert-danger container" role="alert">
 				Acesso negado.
 			</div><br>');
 }
