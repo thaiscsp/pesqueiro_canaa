@@ -4,7 +4,7 @@
 @section('content')
 
 <?php
-if Session::get('admin') {
+if (Session::get('admin')) {
 ?>
 
 <!-- Navbar -->
