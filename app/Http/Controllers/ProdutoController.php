@@ -21,11 +21,10 @@ class ProdutoController extends Controller
             $produto->preco = $request->input('preco');
             $produto->caminho_imagem = $caminho_imagem;
             $produto->nome_arquivo = $nome_arquivo;
-            //$produto->imagem = $imagem;
 
             $produto->save();
             Session::flash('sucesso', 'Produto adicionado com sucesso.');
-            return redirect('gerenciar-produtos');
+            return redirect('gerenciar-cardapio');
         } elseif ($request->input('operacao') == 'Remover') {
             $produtos = Produto::all();
             foreach ($produtos as $produto) {
@@ -36,7 +35,7 @@ class ProdutoController extends Controller
                     Session::flash('erro', 'Não existe produto com esse nome.');
                 }
             }
-            return redirect('gerenciar-produtos');
+            return redirect('gerenciar-cardapio');
         }
     }
 
