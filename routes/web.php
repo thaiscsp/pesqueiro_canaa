@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\AdminController;
 use App\Models\Produto;
-use App\Models\Admin;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,10 +43,3 @@ Route::get('/logout', function () {
     return view('logout');
 });
 Route::post('/logout', [AdminController::class, 'logout']);
-
-Route::get('/teste', function () {
-    $admin = new Admin;
-    $admin->email = 'admin@mail.com';
-    $admin->pwd = md5('admin');
-    $admin->save();
-});
