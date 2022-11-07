@@ -31,8 +31,8 @@
     </div>
   </div>
 </nav>
-<br>
 
+<div class="index-content" style="position: absolute; top: 50px;">
 <!-- Hero section -->
 <div class="d-flex min-vh-100" lc-helper="background" style="background:url(https://raw.githubusercontent.com/thaiscsp/pesqueiro_canaa/13_10_22/public/images/cardapio.jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
     <div class="align-self-center text-center text-light col-md-8 offset-md-2">
@@ -418,7 +418,7 @@
             </div>
             
 </footer>
-
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://pesqueiro-canaa.herokuapp.com/js/exibe_produtos.js"></script>
