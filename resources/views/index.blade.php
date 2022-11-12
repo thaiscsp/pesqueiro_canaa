@@ -13,16 +13,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
+          <a class="nav-link" href="#porcoes">Porções</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#combos">Combos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#pratos">Pratos</a>
+          <a class="nav-link" href="#pratos-executivos">Pratos Executivos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#bebidas">Bebidas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#porcoes">Porções</a>
+          <a class="nav-link" href="#sucos">Sucos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#sobre">Sobre</a>
@@ -59,9 +62,40 @@
 
 <div class="container">
 
+    <h1 id="porcoes">Porções</h1>
+    <center><hr></center>
+
+    <!-- Esta div é preenchida pelo script em "exibe_produtos.js" -->
+    <div name="porcao" class="row row-cols-3 row-cols-lg-3"></div>
+
+    <section id="galeria">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
+                            <br>
+                            <br>
+                            <h6>Contra Filé</h6>
+                            <h6>R$42,88</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <br>
+
     <h1 id="combos">Combos</h1>
-    <center><hr></center><br>
-    <div name="combos" class="row row-cols-2 row-cols-lg-3"></div>
+    <center><hr></center>
+
+    <!-- Esta div é preenchida pelo script em "exibe_produtos.js" -->
+    <div name="combo" class="row row-cols-3 row-cols-lg-3"></div>
+
     <section id="galeria">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper content">
@@ -171,9 +205,12 @@
     </section>
     <br>
 
-    <h1 id="pratos">Pratos Executivos</h1>
-    <center><hr></center><br>
-    <div name="pratos-executivos" class="row row-cols-2 row-cols-lg-3"></div>
+    <h1 id="pratos-executivos">Pratos Executivos</h1>
+    <center><hr></center>
+
+    <!-- Esta div é preenchida pelo script em "exibe_produtos.js" -->
+    <div name="prato_executivo" class="row row-cols-3 row-cols-lg-3"></div>
+
     <section id="galeria">
         <div class="swiper mySwiper conteiner">
             <div class="swiper-wrapper content">
@@ -274,8 +311,6 @@
                     </div>
                 </div>
 
-                
-
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-pagination"></div>
@@ -284,118 +319,46 @@
         </div>
     </section>
     <br>
-
+    
+    <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->
     <h1 id="bebidas">Bebidas</h1>
     <center><hr></center><br>
-    <div name="bebidas" class="row row-cols-2 row-cols-lg-3"></div>
-    <section id="galeria">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper content">
-                
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
-                            <br>
-                            <br>
-                            <h6>Caipirinha</h6>
-                            <h6>Preço: R$18,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
-                            <br>
-                            <br>
-                            <h6>Caipirinha</h6>
-                            <h6>Preço: R$18,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
-                            <br>
-                            <br>
-                            <h6>Caipirinha</h6>
-                            <h6>Preço: R$18,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
-                            <br>
-                            <br>
-                            <h6>Caipirinha</h6>
-                            <h6>Preço: R$18,00</h6>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
-                            <br>
-                            <br>
-                            <h6>Caipirinha</h6>
-                            <h6>Preço: R$18,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
-                            <br>
-                            <br>
-                            <h6>Caipirinha</h6>
-                            <h6>Preço: R$18,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
-                            <br>
-                            <br>
-                            <h6>Caipirinha</h6>
-                            <h6>Preço: R$18,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/caipirinha-354x354.jpg') }}" alt="Caipirinha">
-                            <br>
-                            <br>
-                            <h6>Caipirinha</h6>
-                            <h6>Preço: R$18,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-pagination"></div>
-
-            </div>
-        </div>
-    </section>
+    <h3 class="text-center">Cervejas 600ml</h3>
+    <div name="bebida_cerveja_600ml" class="row row-cols-3 row-cols-lg-3"></div>
     <br>
+    <h3 class="text-center">Long Neck</h3>
+    <div name="bebida_long_neck" class="row row-cols-3 row-cols-lg-3"></div>
+    <br>
+    <h3 class="text-center">Cervejas Lata</h3>
+    <div name="bebida_cerveja_lata" class="row row-cols-3 row-cols-lg-3"></div>
+    <br>
+    <h3 class="text-center">Refrigerante 1L</h3>
+    <div name="bebida_refrigerante_1l" class="row row-cols-3 row-cols-lg-3"></div>
+    <br>
+    <h3 class="text-center">Refrigerante Lata</h3>
+    <div name="bebida_refrigerante_lata" class="row row-cols-3 row-cols-lg-3"></div>
+    <br>
+    <h3 class="text-center">Drinks</h3>
+    <div name="bebida_drink" class="row row-cols-3 row-cols-lg-3"></div>
+    <br>
+    <h3 class="text-center">Opções de frutas</h3>
+    <div name="bebida_opcao_de_fruta" class="row row-cols-3 row-cols-lg-3"></div>
+    <br>
+    <h3 class="text-center">Bebidas Quentes</h3>
+    <div name="bebida_bebida_quente" class="row row-cols-3 row-cols-lg-3"></div>
+    <br>
+    <h3 class="text-center">Combos</h3>
+    <div name="bebida_combo" class="row row-cols-3 row-cols-lg-3"></div>
+    <br>
+
+    <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->
+    <h1 id="sucos">Sucos</h1>
+    <center><hr></center><br>
+    <h3 class="text-center">Copo 500ml</h3>
+    <div name="suco_copo_500ml" class="row row-cols-3 row-cols-lg-3"></div>
+    <br>
+    <h3 class="text-center">1L</h3>
+    <div name="suco_1L" class="row row-cols-3 row-cols-lg-3"></div>
 
 </div>
 

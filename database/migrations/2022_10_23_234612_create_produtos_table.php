@@ -18,11 +18,9 @@ class CreateProdutosTable extends Migration
             $table->timestamps();
             $table->string('nome')->nullable(false)->unique();
             $table->string('tipo')->nullable(false);
-            $table->string('tipo_especifico')->nullable();
             $table->string('preco')->nullable(false);
             $table->string('caminho_imagem')->nullable(false);
             $table->string('nome_arquivo')->nullable(false);
-            //$table->binary('imagem')->nullable(false);
         });
     }
 

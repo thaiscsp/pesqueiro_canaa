@@ -13,11 +13,14 @@ class ProdutoController extends Controller
             $imagem = $request->file('imagem');
             $nome_arquivo = $imagem->getClientOriginalName();
             $caminho_imagem = $imagem->storeAs('images', $nome_arquivo, 'public');
-
+            
             $produto = new Produto();
             $produto->nome = $request->input('nome');
-            $produto->tipo = $request->input('tipo');
-            $produto->tipo_especifico = $request->input('tipo-especifico');
+            if ($request->input('tipo-especifico') <> '') {
+                $produto->tipo = $request->input('tipo') .'_'. $request->input('tipo-especifico');
+            } else {
+                $produto->tipo = $request->input('tipo');
+            }
             $produto->preco = $request->input('preco');
             $produto->caminho_imagem = $caminho_imagem;
             $produto->nome_arquivo = $nome_arquivo;
@@ -29,6 +32,7 @@ class ProdutoController extends Controller
             $produtos = Produto::all();
             foreach ($produtos as $produto) {
                 if ($produto->nome == $request->input('nome')) {
+                    unlink($produto->caminho_imagem);
                     $produto->delete();
                     Session::flash('sucesso', 'Produto removido com sucesso.');
                 } else {
@@ -37,10 +41,5 @@ class ProdutoController extends Controller
             }
             return redirect('gerenciar-cardapio');
         }
-    }
-
-    public function get_produtos() {
-        $produtos = json_encode(Produto::all(), JSON_UNESCAPED_UNICODE);
-        return response($produtos, 200);
     }
 }

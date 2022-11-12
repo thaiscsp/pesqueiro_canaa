@@ -58,11 +58,11 @@ if (Session::get('admin')) {
 				<br>
 				<label for="tipo">Tipo</label>
 				<select class="form-control" onchange="" id="tipo" name="tipo" required>
-					<option value="Porção">Porção</option>
-					<option value="Combo">Combo</option>
-					<option value="Prato Executivo">Prato Executivo</option>
-					<option value="Bebida">Bebida</option>
-					<option value="Suco">Suco</option>
+					<option value="porcao">Porção</option>
+					<option value="combo">Combo</option>
+					<option value="prato_executivo">Prato Executivo</option>
+					<option value="bebida">Bebida</option>
+					<option value="suco">Suco</option>
 				</select>
 				<br>
 				<div id="tipo-especifico"></div>
@@ -98,7 +98,7 @@ if (Session::get('admin')) {
 	<br>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="http://localhost:8000/js/gerenciar_cardapio.js"></script>
+	<script src="https://pesqueiro-canaa.herokuapp.com/js/gerenciar_cardapio.js"></script>
 </div>
 
 <?php

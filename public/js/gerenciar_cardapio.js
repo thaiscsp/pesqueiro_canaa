@@ -1,26 +1,26 @@
 $(document).ready(function() {
 	$('#tipo').change(function() {
-		if ($('#tipo').val() == 'Bebida') {
+		if ($('#tipo').val() == 'bebida') {
 			$('#tipo-especifico').html(
-				'<label for="tipo_especifico">Tipo específico:&nbsp;</label>' +
+				'<label for="tipo_especifico">Tipo específico</label>' +
 				'<select class="form-control" name="tipo-especifico" required>' +
-					'<option value="Cervejas 600ml">Cervejas 600ml</option>' +
-					'<option value="Long Neck">Long Neck</option>' +
-					'<option value="Cervejas Lata">Cervejas Lata</option>' +
-					'<option value="Refrigerante 1L">Refrigerante 1L</option>' +
-					'<option value="Refrigerante Lata">Refrigerante Lata</option>' +
-					'<option value="Drinks">Drinks</option>' +
-					'<option value="Opções de Frutas">Opções de Frutas</option>' +
-					'<option value="Bebidas Quentes">Bebidas Quentes</option>' +
-					'<option value="Combos">Combos</option>' +
+					'<option value="cerveja_600ml">Cerveja 600ml</option>' +
+					'<option value="long_neck">Long Neck</option>' +
+					'<option value="cerveja_lata">Cerveja Lata</option>' +
+					'<option value="refrigerante_1L">Refrigerante 1L</option>' +
+					'<option value="refrigerante_lata">Refrigerante Lata</option>' +
+					'<option value="drink">Drinks</option>' +
+					'<option value="opcao_de_fruta">Opção de Frutas</option>' +
+					'<option value="bebida_quente">Bebida Quente</option>' +
+					'<option value="combo">Combo</option>' +
 				'</select>' +
 				'<br>'
 				);
-		} else if($('#tipo').val() == 'Suco') {
+		} else if($('#tipo').val() == 'suco') {
 			$('#tipo-especifico').html(
-				'<label for="tipo_especifico">Tipo específico:&nbsp;</label>' +
+				'<label for="tipo_especifico">Tipo específico</label>' +
 				'<select class="form-control" name="tipo-especifico" required>' +
-					'<option value="Copo 500ml">Copo 500ml</option>' +
+					'<option value="copo_500ml">Copo 500ml</option>' +
 					'<option value="1L">1L</option>' +
 				'</select>' +
 				'<br>'
