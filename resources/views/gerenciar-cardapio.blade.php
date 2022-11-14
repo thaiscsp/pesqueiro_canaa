@@ -75,7 +75,7 @@ if (Session::get('admin')) {
       			</div>
 				<br>
 				<label for="imagem">Imagem</label>
-				<input class="form-control" type="file" accept=".jpeg, .jpg, .png" name="imagem" required>
+				<input class="form-control" type="file" accept=".jfif, .jpeg, .jpg, .png" name="imagem" required>
 				<br>
 				<center><input class="btn btn-success" name="operacao" type="submit" value="Adicionar"></center>
 			</form>
