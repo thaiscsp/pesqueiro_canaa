@@ -3,6 +3,15 @@
 
 @section('content')
 
+<?php
+use App\Models\Produto;
+
+$produtos = Produto::all();
+foreach ($produtos as $produto) {
+    echo $produto->nome . '<br>';
+}
+?>
+
 <!-- Navbar -->
 <nav id="nav" class="text-center navbar navbar-expand-lg navbar-light bg-dark">
   <div class="container-fluid">
