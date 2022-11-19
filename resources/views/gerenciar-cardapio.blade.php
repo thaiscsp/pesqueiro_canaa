@@ -3,7 +3,9 @@
 
 @section('content')
 
-<?php 
+<?php
+use App\Models\Produto;
+
 if (Session::get('admin')) {
 ?>
 
@@ -86,13 +88,42 @@ if (Session::get('admin')) {
 		<div class="col">
 			<h3 class="text-center">Remover produto</h3>
 			<center><hr></center>
-			<form method="post" action="" enctype="multipart/form-data">
+			<table class="table table-hover">
+  			<thead>
+    			<tr>
+      			<th scope="col">Nome</th>
+      			<th scope="col">Preço</th>
+      			<th scope="col"></th>
+    			</tr>
+  			</thead>
+  			<tbody>
+  			<?php
+					$produtos = Produto::all();
+					foreach ($produtos as $produto) {
+						echo('	<tr>
+      								<td scope="row">' .$produto->nome. '</td>
+      								<td>R$ ' .$produto->preco. '</td>
+      								<td>
+      									<form method="post" action="">');
+      	?>
+      										@csrf
+      	<?php
+      			echo('					<input type="hidden" name="id" value="' .$produto->id. '">
+      											<input class="btn btn-danger" value="Remover" name="operacao" type="submit">
+      									</form>
+      								</td>
+    								</tr>');
+					}
+				?>
+			</tbody>
+		</table>
+			<!--<form method="post" action="">
 				@csrf
 				<label for="nome">Nome</label>
 				<input class="form-control" type="text" name="nome" required>
 				<br>
 				<center><input class="btn btn-danger" name="operacao" type="submit" value="Remover"></center>
-			</form>
+			</form>-->
 		</div>
 	</div>
 	<br>

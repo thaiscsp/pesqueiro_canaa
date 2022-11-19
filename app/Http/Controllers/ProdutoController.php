@@ -31,7 +31,7 @@ class ProdutoController extends Controller
         } elseif ($request->input('operacao') == 'Remover') {
             $produtos = Produto::all();
             foreach ($produtos as $produto) {
-                if ($produto->nome == $request->input('nome')) {
+                if ($produto->id == $request->input('id')) {
                     unlink($produto->caminho_imagem);
                     $produto->delete();
                     Session::flash('sucesso', 'Produto removido com sucesso.');
