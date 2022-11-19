@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\AdminController;
-use App\Models\Admin;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,7 +26,7 @@ Route::get('/gerenciar-cardapio', function () {
 Route::post('/gerenciar-cardapio', [ProdutoController::class, 'gerenciar_produtos']);
 
 
-Route::get('admin', function () {
+Route::get('/admin', function () {
     return view('admin');
 });
 Route::post('/admin', [AdminController::class, 'login']);
@@ -42,10 +42,3 @@ Route::get('/logout', function () {
     return view('logout');
 });
 Route::post('/logout', [AdminController::class, 'logout']);
-
-Route::get('teste', function () {
-    $admin = new Admin();
-    $admin->email = 'admin@mail.com';
-    $admin->pwd = md5('admin');
-    $admin->save();
-});
