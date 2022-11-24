@@ -26,8 +26,27 @@ class ProdutoController extends Controller
             $produto->nome_arquivo = $nome_arquivo;
 
             // API Dropbox
-            $key = env('DROPBOX_KEY');
-            $client = new Client($key);
+            try {
+                $client = new \GuzzleHttp\Client();
+                $res = $client->request("POST", "https://".env('DROPBOX_APP_KEY').":".env('DROPBOX_APP_SECRET')."@api.dropbox.com/oauth2/token", [
+                    'form_params' => [
+                        'grant_type' => 'refresh_token',
+                        'refresh_token' => env('DROPBOX_APP_REFRESH_TOKEN'),
+                    ]
+                ]);
+                if ($res->getStatusCode() == 200) {
+                    $access_token_request = json_decode($res->getBody());
+                    $access_token = $access_token_request->access_token;
+                } else {
+                    return false;
+                }
+            }
+            catch (Exception $e) {
+                $this->logger->error("[{$e->getCode()}] {$e->getMessage()}");
+                return false;
+            }
+            
+            $client = new Client($access_token);
             $caminho_dropbox = '/images/'.$nome_arquivo;
             $client->upload($caminho_dropbox, $arquivo, $mode='add');
             
@@ -35,9 +54,9 @@ class ProdutoController extends Controller
             curl_setopt($ch, CURLOPT_URL, 'https://api.dropboxapi.com/2/sharing/create_shared_link_with_settings');
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"path\":\"".$caminho_dropbox."\"}");
+            curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"path\":\"/images/".$produto->nome_arquivo."\"}");
             $headers = array();
-            $headers[] = 'Authorization: Bearer ' . env('DROPBOX_KEY');
+            $headers[] = 'Authorization: Bearer ' . $access_token;
             $headers[] = 'Content-Type: application/json';
             curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
             $result = curl_exec($ch);
@@ -47,15 +66,33 @@ class ProdutoController extends Controller
             }
             curl_close($ch);
 
-            //$url = str_replace('dl=0', 'raw=1', $json->error->shared_link_already_exists->metadata->url);
             $url = str_replace('dl=0', 'raw=1', $json->url);
             $produto->caminho_imagem = str_replace('https://www.dropbox.com/s/', '', $url);
-            //
-
+            
             $produto->save();
             Session::flash('sucesso', 'Produto adicionado com sucesso.');
             return redirect('gerenciar-cardapio');
         } elseif ($request->input('operacao') == 'Remover') {
+            try {
+                $client = new \GuzzleHttp\Client();
+                $res = $client->request("POST", "https://".env('DROPBOX_APP_KEY').":".env('DROPBOX_APP_SECRET')."@api.dropbox.com/oauth2/token", [
+                    'form_params' => [
+                        'grant_type' => 'refresh_token',
+                        'refresh_token' => env('DROPBOX_APP_REFRESH_TOKEN'),
+                    ]
+                ]);
+                if ($res->getStatusCode() == 200) {
+                    $access_token_request = json_decode($res->getBody());
+                    $access_token = $access_token_request->access_token;
+                } else {
+                    return false;
+                }
+            }
+            catch (Exception $e) {
+                $this->logger->error("[{$e->getCode()}] {$e->getMessage()}");
+                return false;
+            }
+
             $produtos = Produto::all();
             foreach ($produtos as $produto) {
                 if ($produto->id == $request->input('id')) {
@@ -68,7 +105,7 @@ class ProdutoController extends Controller
                     curl_setopt($ch, CURLOPT_POST, 1);
                     curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"path\":\"/images/".$produto->nome_arquivo."\"}");
                     $headers = array();
-                    $headers[] = 'Authorization: Bearer ' . env('DROPBOX_KEY');
+                    $headers[] = 'Authorization: Bearer ' . $access_token;
                     $headers[] = 'Content-Type: application/json';
                     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
                     $result = curl_exec($ch);

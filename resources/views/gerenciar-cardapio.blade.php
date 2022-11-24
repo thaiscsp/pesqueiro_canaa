@@ -117,13 +117,6 @@ if (Session::get('admin')) {
 				?>
 			</tbody>
 		</table>
-			<!--<form method="post" action="">
-				@csrf
-				<label for="nome">Nome</label>
-				<input class="form-control" type="text" name="nome" required>
-				<br>
-				<center><input class="btn btn-danger" name="operacao" type="submit" value="Remover"></center>
-			</form>-->
 		</div>
 	</div>
 	<br>
