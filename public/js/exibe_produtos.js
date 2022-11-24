@@ -11,12 +11,12 @@ $(document).ready(function() {
         for (var tipo_banco of tipos_banco) {
             $.each(json, function(key, value) {
                 if (this.tipo == tipo_banco) {
-                    var caminho_imagem = this.caminho_imagem;
+                    alert(this.caminho_imagem);
                     produtos += 
                         '<center>' +
                             '<div class="col mb-4">' +
                                 '<div class="card">' +
-                                    '<img src="' +caminho_imagem.replace("https://pesqueiro-canaa.herokuapp.com/", "")+ '" class="card-img-top">' +
+                                    '<img src="' +this.caminho_imagem+ '" class="card-img-top">' +
                                     '<div class="card-body">' +
                                         '<h6 class="card-title">' +this.nome+ '</h6>' +
                                         '<p class="card-text">R$ ' +this.preco+ '</p>' +
@@ -25,7 +25,7 @@ $(document).ready(function() {
                             '</div>' +
                         '</center>';
                 }
-                
+                //$("#w3s").attr("src", this.caminho_imagem);    
             });
             $('div[name="'+tipo_banco+'"]').html(produtos);
             produtos = '';
