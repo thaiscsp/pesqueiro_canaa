@@ -12,12 +12,11 @@ $(document).ready(function() {
             $.each(json, function(key, value) {
                 if (this.tipo == tipo_banco) {
                     var caminho_imagem = this.caminho_imagem;
-                    caminho_imagem = caminho_imagem.replace("https://pesqueiro-canaa.herokuapp.com/", "");
                     produtos += 
                         '<center>' +
                             '<div class="col mb-4">' +
                                 '<div class="card">' +
-                                    '<img src="' +caminho_imagem+ '" class="card-img-top">' +
+                                    '<img src="' +caminho_imagem.replace("https://pesqueiro-canaa.herokuapp.com/", "")+ '" class="card-img-top">' +
                                     '<div class="card-body">' +
                                         '<h6 class="card-title">' +this.nome+ '</h6>' +
                                         '<p class="card-text">R$ ' +this.preco+ '</p>' +
