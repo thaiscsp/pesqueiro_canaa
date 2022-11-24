@@ -67,27 +67,6 @@
 
     <!-- Esta div é preenchida pelo script em "exibe_produtos.js" -->
     <div name="porcao" class="row row-cols-3 row-cols-lg-3"></div>
-
-    <section id="galeria">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper content">
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
-                            <br>
-                            <br>
-                            <h6>Contra Filé</h6>
-                            <h6>R$42,88</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-pagination"></div>
-            </div>
-        </div>
-    </section>
     <br>
 
     <h1 id="combos">Combos</h1>
@@ -383,6 +362,10 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--
+Para teste local:
+<script src="http://localhost:8000/js/exibe_produtos.js"></script>
+-->
 <script src="https://pesqueiro-canaa.herokuapp.com/js/exibe_produtos.js"></script>
 
 @stop
