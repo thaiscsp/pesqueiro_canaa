@@ -49,7 +49,7 @@ class ProdutoController extends Controller
 
             //$url = str_replace('dl=0', 'raw=1', $json->error->shared_link_already_exists->metadata->url);
             $url = str_replace('dl=0', 'raw=1', $json->url);
-            $produto->caminho_imagem = $url;
+            $produto->caminho_imagem = str_replace('https://pesqueiro-canaa.herokuapp.com/', '', $url);
             //
 
             $produto->save();
