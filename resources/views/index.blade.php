@@ -75,6 +75,7 @@
     <!-- Esta div é preenchida pelo script em "exibe_produtos.js" -->
     <div name="combo" class="row row-cols-3 row-cols-lg-3"></div>
 
+    <!--
     <section id="galeria">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper content">
@@ -183,13 +184,15 @@
         </div>
     </section>
     <br>
-
+    -->
+    
     <h1 id="pratos-executivos">Pratos Executivos</h1>
     <center><hr></center>
 
     <!-- Esta div é preenchida pelo script em "exibe_produtos.js" -->
     <div name="prato_executivo" class="row row-cols-3 row-cols-lg-3"></div>
-
+    
+    <!--
     <section id="galeria">
         <div class="swiper mySwiper conteiner">
             <div class="swiper-wrapper content">
@@ -298,6 +301,7 @@
         </div>
     </section>
     <br>
+    -->
     
     <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->
     <h1 id="bebidas">Bebidas</h1>
