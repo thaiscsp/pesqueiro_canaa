@@ -80,15 +80,15 @@ class ProdutoController extends Controller
 
                 if ($request->file('imagem')) {
                     $access_token = $this->dropbox_recupera_access_token();
-                    $this->dropbox_remove_imagem($access_token, $novo_produto->nome_arquivo);
+                    $this->dropbox_remove_imagem($access_token, $produto->nome_arquivo);
 
                     $imagem = $request->file('imagem');
                     $arquivo = $imagem->get();
                     $nome_arquivo = $imagem->getClientOriginalName();
-                    $novo_produto->nome_arquivo = $nome_arquivo;
+                    $produto->nome_arquivo = $nome_arquivo;
 
                     $this->dropbox_faz_upload_de_imagem($access_token, $nome_arquivo, $arquivo);
-                    $url = $this->dropbox_cria_shared_link($access_token, $novo_produto->nome_arquivo);
+                    $url = $this->dropbox_cria_shared_link($access_token, $produto->nome_arquivo);
 
                     $produto->caminho_imagem = str_replace('https://www.dropbox.com/s/', '', $url);
                     $produto->save();
