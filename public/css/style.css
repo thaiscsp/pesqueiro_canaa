@@ -123,10 +123,6 @@ hr {
   scroll-behavior: auto !important;
 }*/
 
-img {
-    z-index: -1 !important;
-}
-
 /* Para detectar ghost elements
 * {
   background: #000 !important;
