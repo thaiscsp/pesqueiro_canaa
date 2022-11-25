@@ -46,7 +46,7 @@ h1 {
 }
 
 .card{
-	position: relative;
+	position: fixed;
 	border-radius: 20px;
 	margin: 20px 0;
 
