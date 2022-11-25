@@ -16,7 +16,7 @@ $(document).ready(function() {
                             '<div class="col mb-4">' +
                                 '<div class="card">' +
                                     '<img class="card-img-top alt="150x100" width="150" height="100" produto" src="https://www.dropbox.com/s/' +this.caminho_imagem+ '">'  +
-                                    '<div class="card-body">' +
+                                    '<div class="card-body" alt="150x100" width="150" height="100">' +
                                         '<h6 class="card-title">' +this.nome+ '</h6>' +
                                         '<p class="card-text">R$ ' +this.preco+ '</p>' +
                                     '</div>' +
