@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.get("http://pesqueiro-canaa.herokuapp.com/api/produtos", function(data, status){
+    $.get("https://pesqueiro-canaa.herokuapp.com/api/produtos", function(data, status){
         var json = jQuery.parseJSON(data);
         var tipos_banco=[   'porcao', 'combo', 'prato_executivo',
                             'bebida_cerveja_600ml', 'bebida_long_neck', 'bebida_cerveja_lata',
