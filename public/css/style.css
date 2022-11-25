@@ -42,7 +42,7 @@ h1 {
 
 .swiper{
 	/*width: 700px;*/
-	width: auto;
+	width: fixed;
 }
 
 .card{
