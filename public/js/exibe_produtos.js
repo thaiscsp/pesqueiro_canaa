@@ -14,9 +14,9 @@ $(document).ready(function() {
                     produtos += 
                         '<center>' +
                             '<div class="col mb-4">' +
-                                '<div class="rounded mx-auto d-block">' +
+                                '<div class="card">' +
                                     '<img class="produto" src="https://www.dropbox.com/s/' +this.caminho_imagem+ '" class="card-img-top">' +
-                                    '<div class="card-body">' +
+                                    '<div class="rounded mx-auto d-block">' +
                                         '<h6 class="card-title">' +this.nome+ '</h6>' +
                                         '<p class="card-text">R$ ' +this.preco+ '</p>' +
                                     '</div>' +
