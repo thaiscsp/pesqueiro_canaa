@@ -119,8 +119,12 @@ hr {
 	margin-right: 10px;
 }
 
-html {
+/*html {
   scroll-behavior: auto !important;
+}*/
+
+img {
+    z-index: -1 !important;
 }
 
 /* Para detectar ghost elements
