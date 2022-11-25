@@ -88,11 +88,12 @@ if (Session::get('admin')) {
 		<div class="col">
 			<h3 class="text-center">Remover produto</h3>
 			<center><hr></center>
-			<table class="table table-hover">
+			<table class="text-center table table-hover">
   			<thead>
     			<tr>
       			<th scope="col">Nome</th>
       			<th scope="col">Preço</th>
+      			<th scope="col"></th>
       			<th scope="col"></th>
     			</tr>
   			</thead>
@@ -103,6 +104,15 @@ if (Session::get('admin')) {
 						echo('	<tr>
       								<td scope="row">' .$produto->nome. '</td>
       								<td>R$ ' .$produto->preco. '</td>
+      								<td>
+      									<form method="post" action="">');
+      	?>
+      										@csrf
+      	<?php
+      			echo('					<input type="hidden" name="id" value="' .$produto->id. '">
+      											<input class="btn btn-warning" value="Editar" name="operacao" type="submit">
+      									</form>
+      								</td>
       								<td>
       									<form method="post" action="">');
       	?>

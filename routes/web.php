@@ -25,6 +25,10 @@ Route::get('/gerenciar-cardapio', function () {
 });
 Route::post('/gerenciar-cardapio', [ProdutoController::class, 'gerenciar_produtos']);
 
+Route::get('/editar-produto', function () {
+    return view('editar-produto');
+});
+Route::post('/editar-produto', [ProdutoController::class, 'edita_produto']);
 
 Route::get('/admin', function () {
     return view('admin');

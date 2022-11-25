@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('#tipo').change(function() {
 		if ($('#tipo').val() == 'bebida') {
 			$('#tipo-especifico').html(
-				'<label for="tipo_especifico">Tipo específico</label>' +
+				'<label for="tipo-especifico">Tipo específico</label>' +
 				'<select class="form-control" name="tipo-especifico" required>' +
 					'<option value="cerveja_600ml">Cerveja 600ml</option>' +
 					'<option value="long_neck">Long Neck</option>' +
@@ -18,7 +18,7 @@ $(document).ready(function() {
 				);
 		} else if($('#tipo').val() == 'suco') {
 			$('#tipo-especifico').html(
-				'<label for="tipo_especifico">Tipo específico</label>' +
+				'<label for="tipo-especifico">Tipo específico</label>' +
 				'<select class="form-control" name="tipo-especifico" required>' +
 					'<option value="copo_500ml">Copo 500ml</option>' +
 					'<option value="1L">1L</option>' +
