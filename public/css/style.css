@@ -47,7 +47,7 @@ h1 {
 
 .card{
 	position: relative;
-	border-radius: 30px;
+	border-radius: 20px;
 	margin: 20px 0;
 
 }
@@ -63,7 +63,7 @@ h1 {
 #galeria .card .image img{
 	height:  100%;
 	width: 100%;
-	border-radius: 20px;
+	border-radius: 40px;
 	transition: all 0.4s;
 	opacity: 100%;
 }
