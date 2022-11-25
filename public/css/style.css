@@ -11,7 +11,7 @@ ul {
 }
 
 p, h2, h6, ul, .card-body, .lead{
-	#font-family: Montserrat;
+	font-family: Montserrat;
 	font-weight: bold;
 }
 
@@ -48,7 +48,7 @@ h1 {
 .card{
 	position: relative;
 	border-radius: -5px;
-	margin: 20px 0;
+	margin: 20px -7px;
 
 }
 
