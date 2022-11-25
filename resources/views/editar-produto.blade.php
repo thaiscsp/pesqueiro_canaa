@@ -102,14 +102,14 @@ if (Session::get('admin')) {
 				<br>
 				<center><input class="btn btn-warning" name="operacao" type="submit" value="Editar"></center>
 				<br>
-				<center><button type="button" class="btn btn-primary"><a style="text-decoration: none;" href="http://localhost:8000/gerenciar-cardapio">Voltar</a></button></center>
+				<center><button type="button" class="btn btn-primary"><a style="text-decoration: none;" href="https://pesqueiro-canaa.herokuapp.com/gerenciar-cardapio">Voltar</a></button></center>
 				<br>
 			</form>
 		</div>
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="http://localhost:8000/js/gerenciar_cardapio.js"></script>
+	<script src="https://pesqueiro-canaa.herokuapp.com/js/gerenciar_cardapio.js"></script>
 </div>
 
 <?php
