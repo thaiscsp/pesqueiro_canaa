@@ -66,7 +66,7 @@ if (Session::get('admin')) {
 										<div class="row">
 											<div class="col">
 												<label for="tipo-atual">Tipo atual</label>
-												<input class="form-control" name="tipo-atual" type="text" value="' .$tipo. '" readonly>
+												<input class="form-control" name="tipo-atual" type="text" value="' .$produto->tipo. '" readonly>
 											</div>');
 				?>
 					<div class="col">
