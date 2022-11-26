@@ -68,7 +68,6 @@ class ProdutoController extends Controller
         $uri = $_SERVER['REQUEST_URI'];
         $index = strpos($uri,"=");
         $id = substr($uri, $index+1);
-        //foreach ($produtos as $produto) {
             if ($produto = Produto::find($id)) {
                 $produto->nome = $request->input('nome');
                 if ($request->input('tipo')<>'' and $request->input('tipo-especifico')<>'') {
@@ -97,7 +96,6 @@ class ProdutoController extends Controller
                 $produto->save();
                 Session::flash('sucesso', 'Produto editado com sucesso.');
             }
-        //}
         return redirect('editar-produto?id=' .$produto->id);
     }
 
