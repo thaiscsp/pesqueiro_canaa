@@ -86,7 +86,7 @@ if (Session::get('admin')) {
 	<br><br>
 	<div class="row form-group">
 		<div class="col">
-			<h3 class="text-center">Remover produto</h3>
+			<h3 class="text-center">Editar/Remover produto</h3>
 			<center><hr></center>
 			<table class="text-center table table-hover">
   			<thead>
