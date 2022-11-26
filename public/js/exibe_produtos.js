@@ -12,17 +12,19 @@ $(document).ready(function() {
             $.each(json, function(key, value) {
                 if (this.tipo == tipo_banco) {
                     produtos += 
-                        '<center>' +
-                            '<div class="col mb-4">' +
-                                '<div class="card">' +
-                                    '<img class="card-img-top produto" src="https://www.dropbox.com/s/' +this.caminho_imagem+ '">'  +
-                                    '<div class="card-body">' +
-                                        '<h6 class="card-title">' +this.nome+ '</h6>' +
-                                        '<p class="card-text">R$ ' +this.preco+ '</p>' +
-                                    '</div>' +
+                    '<center>' +
+                        '<div class="col mb-4">' +
+                            '<div class="card">' +
+                                '<img class="card-img-top produto" src="https://www.dropbox.com/s/' +this.caminho_imagem+ '">'  +
+                                '<div class="card-body">' +
+                                    '<h6 class="card-title">' +this.nome+ '</h6>' +
+                                '</div>' +
+                                '<div class="card-footer">' +
+                                    '<small class="text-muted">R$ ' +this.preco+ '</small>' +
                                 '</div>' +
                             '</div>' +
-                        '</center>';
+                        '</div>' +
+                    '</center>';
                 }  
             });
             $('div[name="'+tipo_banco+'"]').html(produtos);
