@@ -60,13 +60,6 @@ if (Session::get('admin')) {
 					$id = substr($uri, $index+1);
 					foreach($produtos as $produto) {
 						if ($produto->id == $id) {
-							$tipo = str_replace('_', ' ', $produto->tipo);
-							$array = explode(' ', $tipo);
-							if (count($array)==2) {
-								$tipo = ucfirst($array[0]) .' - '. ucfirst($array[1]);
-							} elseif (count($array)==3) {
-								$tipo = ucfirst($array[0]) .' - '. ucfirst($array[1]) .' '. $array[2];
-							}
 							echo(	'<label for="nome">Nome</label>
 										<input class="form-control" type="text" name="nome" required value="' .$produto->nome. '">
 										<br>
@@ -74,18 +67,19 @@ if (Session::get('admin')) {
 											<div class="col">
 												<label for="tipo-atual">Tipo atual</label>
 												<input class="form-control" name="tipo-atual" type="text" value="' .$tipo. '" readonly>
-												<small>Este tipo será mantido caso nenhum outro seja selecionado.</small>
 											</div>');
 				?>
 					<div class="col">
 						<label for="tipo">Novo tipo</label>
 						<select class="form-control" onchange="" id="tipo" name="tipo">
+							<option value=""></option>
 							<option value="porcao">Porção</option>
 							<option value="combo">Combo</option>
 							<option value="prato_executivo">Prato Executivo</option>
 							<option value="bebida">Bebida</option>
 							<option value="suco">Suco</option>
 						</select>
+						<small>Deixe em branco para manter o tipo atual.</small>
 					</div>
 				</div>
 				<br>
