@@ -4,7 +4,7 @@ $(document).ready(function() {
         var tipos_banco=[   'porcao', 'combo', 'prato_executivo',
                             'bebida_cerveja_600ml', 'bebida_long_neck', 'bebida_cerveja_lata',
                             'bebida_refrigerante_1L', 'bebida_refrigerante_lata', 'bebida_drink',
-                            'bebida_opcao_de_fruta', 'bebida_bebida_quente', 'bebida_combo',
+                            'bebida_bebida_quente', 'bebida_combo',
                             'suco_copo_500ml', 'suco_1L'
                         ];
         var produtos = '';

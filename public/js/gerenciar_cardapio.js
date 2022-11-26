@@ -10,7 +10,6 @@ $(document).ready(function() {
 					'<option value="refrigerante_1L">Refrigerante 1L</option>' +
 					'<option value="refrigerante_lata">Refrigerante Lata</option>' +
 					'<option value="drink">Drinks</option>' +
-					'<option value="opcao_de_fruta">Opção de Frutas</option>' +
 					'<option value="bebida_quente">Bebida Quente</option>' +
 					'<option value="combo">Combo</option>' +
 				'</select>' +

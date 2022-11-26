@@ -324,9 +324,6 @@
     <h3 class="text-center">Drinks</h3>
     <div name="bebida_drink" class="row row-cols-3 row-cols-lg-3"></div>
     <br>
-    <h3 class="text-center">Opções de frutas</h3>
-    <div name="bebida_opcao_de_fruta" class="row row-cols-3 row-cols-lg-3"></div>
-    <br>
     <h3 class="text-center">Bebidas Quentes</h3>
     <div name="bebida_bebida_quente" class="row row-cols-3 row-cols-lg-3"></div>
     <br>
