@@ -68,7 +68,7 @@ h1 {
 }
 
 .swiper-pagination{
-	#position: absolute;
+	position: absolute;
 	position: relative;
 }
 
