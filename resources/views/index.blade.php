@@ -61,6 +61,8 @@
 <br>
 
 <section class="galeria">
+
+<div class="min-vh-1200">
     <h1 id="porcoes">Porções</h1>
     <center><hr></center>
 
@@ -127,7 +129,7 @@
 
     <h3 class="text-center">Refrigerante Lata</h3>
     <div class="swiper mySwiper">
-        <div name="bebida_refrigerante_lata" class="swiper-wrapper conetent">
+        <div name="bebida_refrigerante_lata" class="swiper-wrapper content">
             <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->  
         </div>
     </div>
@@ -135,7 +137,7 @@
 
     <h3 class="text-center">Drinks</h3>
     <div class="swiper mySwiper">
-        <div name="bebida_drink" class="swiper-wrapper conetent"><!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" --></div>     
+        <div name="bebida_drink" class="swiper-wrapper content"><!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" --></div>     
     </div>
     <br>
 
@@ -164,7 +166,7 @@
         <div name="suco_1L" class="swiper-wrapper content"><!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" --></div>
     </div>
     <br>
-
+</div>
 </section>
 <footer id="sobre" class="footer">
             <div style="color: rgb(33, 37, 41);" class="container sobre">
@@ -183,7 +185,6 @@
                 <center><hr></center>
                 <p>Pesqueiro Canaã &copy; <?php echo date("Y");?></p>
             </div>
-            
             
 </footer>
 
