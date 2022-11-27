@@ -1,8 +1,8 @@
 var swiper = new Swiper(" .mySwiper", {
 
 	slidesPerView: 3,
-	spaceBetween: 10,
-	slidesPerGroup: 3,
+	spaceBetween: 18,
+	slidesPerGroup: 2,
 	loop: true,
 	loopFillGroupWithBlank: true,
 
