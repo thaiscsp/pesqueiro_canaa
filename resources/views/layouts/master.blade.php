@@ -19,7 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 		<!-- CSS local -->
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="https://pesqueiro-canaa.herokuapp.com/css/style.css">
 	</head>
 
 	<body>

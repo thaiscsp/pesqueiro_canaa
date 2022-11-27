@@ -187,5 +187,5 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="/js/exibe_produtos.js"></script>
+<script src="https://pesqueiro-canaa.herokuapp.com/js/exibe_produtos.js"></script>
 @stop
