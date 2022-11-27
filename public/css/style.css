@@ -1,3 +1,9 @@
+@media only screen and (max-device-width: 900px) {
+	.galeria{
+		width: 1000px;
+	}
+}
+
 a {
 	color: #ffffff !important;
 	margin-right: 5px !important;
@@ -30,7 +36,7 @@ h1 {
 }
 
 .swiper{
-	width: 920px;
+	width: 80%;
 	position: relative;
 }
 
@@ -45,7 +51,7 @@ h1 {
 	height:  80%;
 	width: 80%;
 	cursor:  pointer;
-	padding: 25px;
+	padding: 10%;
 }
 
 #galeria .card .image img{
@@ -68,7 +74,7 @@ h1 {
 }
 
 .swiper-pagination{
-	position: absolute;
+	position: relative;
 	position: relative;
 }
 
@@ -112,9 +118,9 @@ hr {
 }
 
 .card img{
-	border-radius: 180px;
-	max-width: 300px;
-	max-height: 300px;
+	border-radius: 100%;
+	max-width: 50%;
+	max-height: 50%;
 	align-items: center;
 	padding-top: 10px;
 }
