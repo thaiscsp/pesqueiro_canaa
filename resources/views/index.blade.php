@@ -62,7 +62,7 @@
 
 <section class="galeria">
 
-<div class="min-vh-1200">
+<div class="min-vh-1000">
     <h1 id="porcoes">Porções</h1>
     <center><hr></center>
 
