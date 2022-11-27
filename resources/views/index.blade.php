@@ -60,289 +60,112 @@
 </div>
 <br>
 
-<div class="container">
-
+<section class="galeria">
     <h1 id="porcoes">Porções</h1>
     <center><hr></center>
 
-    <!-- Esta div é preenchida pelo script em "exibe_produtos.js" -->
-    <div name="porcao" class="row row-cols-3 row-cols-lg-3"></div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper content" name="porcao">
+            <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->
+        </div>
+    </div>    
     <br>
 
     <h1 id="combos">Combos</h1>
     <center><hr></center>
-
     <!-- Esta div é preenchida pelo script em "exibe_produtos.js" -->
-    <div name="combo" class="row row-cols-3 row-cols-lg-3"></div>
-
-    <!--
-    <section id="galeria">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper content">
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
-                            <br>
-                            <br>
-                            <h6>Contra Filé</h6>
-                            <h6>R$42,88</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
-                            <br>
-                            <br>
-                            <h6>Contra Filé</h6>
-                            <h6>R$42,88</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
-                            <br>
-                            <br>
-                            <h6>Contra Filé</h6>
-                            <h6>R$42,88</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
-                            <br>
-                            <br>
-                            <h6>Contra Filé</h6>
-                            <h6>R$42,88</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
-                            <br>
-                            <br>
-                            <h6>Contra Filé</h6>
-                            <h6>R$42,88</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
-                            <br>
-                            <br>
-                            <h6>Contra Filé</h6>
-                            <h6>R$42,88</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
-                            <br>
-                            <br>
-                            <h6>Contra Filé</h6>
-                            <h6>R$42,88</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/combo-de-contra-file-354x354.jpg') }}" alt="Combo de contra filé">
-                            <br>
-                            <br>
-                            <h6>Contra Filé</h6>
-                            <h6>R$42,88</h6>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-pagination"></div>
-
-            </div>
+    <div class="swiper mySwiper">
+        <div name="combo" class="swiper-wrapper content">
+            <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->
         </div>
-    </section>
+    </div>    
     <br>
-    -->
-    
+
     <h1 id="pratos-executivos">Pratos Executivos</h1>
     <center><hr></center>
-
-    <!-- Esta div é preenchida pelo script em "exibe_produtos.js" -->
-    <div name="prato_executivo" class="row row-cols-3 row-cols-lg-3"></div>
-    
-    <!--
-    <section id="galeria">
-        <div class="swiper mySwiper conteiner">
-            <div class="swiper-wrapper content">
-                
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
-                            <br>
-                            <br>
-                            <h6>Parmegiana</h6>
-                            <h6>Preço: R$85,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
-                            <br>
-                            <br>
-                            <h6>Parmegiana</h6>
-                            <h6>Preço: R$85,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
-                            <br>
-                            <br>
-                            <h6>Parmegiana</h6>
-                            <h6>Preço: R$85,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
-                            <br>
-                            <br>
-                            <h6>Parmegiana</h6>
-                            <h6>Preço: R$85,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
-                            <br>
-                            <br>
-                            <h6>Parmegiana</h6>
-                            <h6>Preço: R$85,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
-                            <br>
-                            <br>
-                            <h6>Parmegiana</h6>
-                            <h6>Preço: R$85,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
-                            <br>
-                            <br>
-                            <h6>Parmegiana</h6>
-                            <h6>Preço: R$85,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="{{ asset('images/prato-executivo-de-parmegiana-354x354.jpg') }}" alt="Parmegiana">
-                            <br>
-                            <br>
-                            <h6>Parmegiana</h6>
-                            <h6>Preço: R$85,00</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-pagination"></div>
-
-            </div>
+    <div class="swiper mySwiper">
+        <div name="prato_executivo" class="swiper-wrapper content">
+            <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->            
         </div>
-    </section>
+    </div>
     <br>
-    -->
     
-    <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->
+    
     <h1 id="bebidas">Bebidas</h1>
     <center><hr></center><br>
     <h3 class="text-center">Cervejas 600ml</h3>
-    <div name="bebida_cerveja_600ml" class="row row-cols-3 row-cols-lg-3"></div>
-    <br>
-    <h3 class="text-center">Long Neck</h3>
-    <div name="bebida_long_neck" class="row row-cols-3 row-cols-lg-3"></div>
-    <br>
-    <h3 class="text-center">Cervejas Lata</h3>
-    <div name="bebida_cerveja_lata" class="row row-cols-3 row-cols-lg-3"></div>
-    <br>
-    <h3 class="text-center">Refrigerante 1L</h3>
-    <div name="bebida_refrigerante_1l" class="row row-cols-3 row-cols-lg-3"></div>
-    <br>
-    <h3 class="text-center">Refrigerante Lata</h3>
-    <div name="bebida_refrigerante_lata" class="row row-cols-3 row-cols-lg-3"></div>
-    <br>
-    <h3 class="text-center">Drinks</h3>
-    <div name="bebida_drink" class="row row-cols-3 row-cols-lg-3"></div>
-    <br>
-    <h3 class="text-center">Bebidas Quentes</h3>
-    <div name="bebida_bebida_quente" class="row row-cols-3 row-cols-lg-3"></div>
-    <br>
-    <h3 class="text-center">Combos</h3>
-    <div name="bebida_combo" class="row row-cols-3 row-cols-lg-3"></div>
+    <div class="swiper mySwiper">
+        <div name="bebida_cerveja_600ml" class="swiper-wrapper content">
+            <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->
+        </div>
+    </div>
     <br>
 
-    <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->
+    <h3 class="text-center">Long Neck</h3>
+    <div class="swiper mySwiper">
+        <div name="bebida_long_neck" class="swiper-wrapper content">
+            <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->        
+        </div>        
+    </div>
+    <br>
+    
+    <h3 class="text-center">Cervejas Lata</h3>
+    <div class="swiper mySwiper">
+        <div name="bebida_cerveja_lata" class="swiper-wrapper content">
+            <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->        
+        </div>
+    </div>
+    <br>
+
+    <h3 class="text-center">Refrigerante 1L</h3>
+    <div class="swiper mySwiper">
+        <div name="bebida_refrigerante_1l" class="swiper-wrapper content">
+            <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->
+        </div>
+    </div>
+    <br>
+
+    <h3 class="text-center">Refrigerante Lata</h3>
+    <div class="swiper mySwiper">
+        <div name="bebida_refrigerante_lata" class="swiper-wrapper conetent">
+            <!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" -->  
+        </div>
+    </div>
+    <br>
+
+    <h3 class="text-center">Drinks</h3>
+    <div class="swiper mySwiper">
+        <div name="bebida_drink" class="swiper-wrapper conetent"><!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" --></div>     
+    </div>
+    <br>
+
+    <h3 class="text-center">Bebidas Quentes</h3>
+    <div class="swiper mySwiper">
+        <div name="bebida_bebida_quente" class="swiper-wrapper content"><!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" --></div>    
+    </div>
+    <br>
+    
+    <h3 class="text-center">Combos</h3>
+    <div class="swiper mySwiper">
+        <div name="bebida_combo" class="swiper-wrapper content"><!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" --></div>
+    </div>
+    <br>
+    
     <h1 id="sucos">Sucos</h1>
     <center><hr></center><br>
     <h3 class="text-center">Copo 500ml</h3>
-    <div name="suco_copo_500ml" class="row row-cols-3 row-cols-lg-3"></div>
+    <div class="swiper mySwiper">
+        <div name="suco_copo_500ml" class="swiper-wrapper content"><!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" --></div>
+    </div>          
     <br>
+
     <h3 class="text-center">1L</h3>
-    <div name="suco_1L" class="row row-cols-3 row-cols-lg-3"></div>
+    <div class="swiper mySwiper">
+        <div name="suco_1L" class="swiper-wrapper content"><!-- As divs a seguir são preenchidas pelo script em "exibe_produtos.js" --></div>
+    </div>
     <br>
 
-</div>
-
+</section>
 <footer id="sobre" class="footer">
             <div style="color: rgb(33, 37, 41);" class="container sobre">
                 <h1>Sobre o Pesqueiro Canaã</h1>
@@ -364,6 +187,5 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://pesqueiro-canaa.herokuapp.com/js/exibe_produtos.js"></script>
-
+<script src="/js/exibe_produtos.js"></script>
 @stop
