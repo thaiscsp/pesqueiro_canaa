@@ -44,7 +44,7 @@ h1 {
 }
 
 .swiper{
-	width: 300px;
+	width: 360px;
 	position: relative;
 }
 
@@ -127,6 +127,8 @@ hr {
 
 .card img{
 	border-radius: 180px;
+	max-width: 300px;
+	max-height: 300px;
 	align-items: center;
 	padding-top: 10px;
 }
