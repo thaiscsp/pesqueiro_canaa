@@ -184,12 +184,6 @@
                 <p>Pesqueiro Canaã &copy; <?php echo date("Y");?></p>
             </div>
             
-</footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://pesqueiro-canaa.herokuapp.com/js/exibe_produtos.js"></script>
-
-
 <?php
 $mobile = FALSE;
 $user_agents = array("iPhone","iPad","Android","webOS","BlackBerry","iPod","Symbian","IsGeneric");
@@ -206,6 +200,14 @@ if ($mobile){
     echo "Acesso feito via computador";
 }
 ?>
-		</script>
+		</script>            
+            
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://pesqueiro-canaa.herokuapp.com/js/exibe_produtos.js"></script>
+
+
+
 
 @stop
