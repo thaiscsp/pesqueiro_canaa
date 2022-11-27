@@ -136,14 +136,3 @@ hr {
    background-size: cover;
    background-position: center;
 }*/
-
-@media (min-width: 768px) {
-  .section-with-carousel .swiper img {
-    height: 370px;
-  }
-}
- 
-@media (min-width: 1200px) {
-  .section-with-carousel .swiper img {
-    height: 420px;
-  }
