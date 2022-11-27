@@ -29,7 +29,7 @@ h1 {
 	z-index: 100;
 }
 
-#galeria{
+.galeria{
 	background-color: #e4e4e4;
 	position:  inherit;
 	height: 400px;
@@ -44,7 +44,7 @@ h1 {
 }
 
 .swiper{
-	width: 1000px;
+	width: 950px;
 	position: relative;
 }
 
