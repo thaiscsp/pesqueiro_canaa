@@ -60,7 +60,7 @@
 </div>
 <br>
 
-<section id="galeria">
+<section class="galeria">
     <h1 id="porcoes">Porções</h1>
     <center><hr></center>
 
